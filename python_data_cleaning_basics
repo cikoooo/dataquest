@@ -1,3 +1,46 @@
 # Dataquest - Python for Data Science: Intermediate
 # Python Data Cleaning Basics
 
+**Task 1:**
+# Read the text on the left, and then scroll to the bottom
+# to find the instructions for the coding exercise
+
+# Write your answer to the instructions below -- the list of
+# lists is stored using the variable name `moma`
+
+num_rows = len(moma)
+print(num_rows)
+
+
+**Task 2:**
+# import the reader function from the csv module
+from csv import reader
+
+# use the python built-in function open()
+# to open the children.csv file
+opened_file = open('children.csv')
+
+# use csv.reader() to parse the data from
+# the opened file
+read_file = reader(opened_file)
+
+# use list() to convert the read file
+# into a list of lists format
+children = list(read_file)
+
+# remove the first row of the data, which
+# contains the column names
+children = children[1:]
+
+# Write your code here
+opened_file = open('artworks.csv')
+
+read_file = reader(opened_file)
+
+moma = list(read_file)
+
+moma = moma[1:]
+print(moma[:1])
+
+
+Task 3:
